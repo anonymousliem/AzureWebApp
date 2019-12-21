@@ -56,7 +56,7 @@ if ($terupload) {
     echo "Upload Gagal!";
 } 
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=anonymousliem;AccountKey=cCoHpsQemjlOWzGszVkAMlbxcrUp2As9TjoQRFhheIn7LM1pzGSeYSpC2wgKR84R4OSaaEJjJrZxg2CAIBgEQg==;EndpointSuffix=core.windows.net";
+$connectionString = "<masukkan connection string>";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
@@ -105,7 +105,7 @@ if (!isset($_GET["Cleanup"])) {
         //Upload blob
         $blobClient->createBlockBlob($containerName, $fileToUpload, $content);
 
-        // List blobs.
+        // List blobs.\
         $listBlobsOptions = new ListBlobsOptions();
         $listBlobsOptions->setPrefix("HelloWorld");
 
