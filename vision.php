@@ -24,7 +24,7 @@
         // If you use a free trial subscription key, you shouldn't need to change
         // this region.
         var uriBase =
-            "https://anonymousliemvision.cognitiveservices.azure.com/";
+            "https://anonymousliemvision.cognitiveservices.azure.com/analyze?visualFeatures=Description";
  
         // Request parameters.
         var params = {
