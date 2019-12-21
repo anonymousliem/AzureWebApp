@@ -27,7 +27,9 @@
          var uriBase = "https://anonymousliemVision.cognitiveservices.azure.com/vision/v2.0/analyze"
         // Request parameters.
         var params = {
-            "visualFeatures": "Color"
+            "visualFeatures": "Categories,Description,Tags",
+            "details": "",
+            "language": "en",
         };
  
         // Display the image.
