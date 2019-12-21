@@ -24,7 +24,7 @@
         // **********************************************
  
         // Replace <Subscription Key> with your valid subscription key.
-        var subscriptionKey = "a283b9248a4340ce9a3bde30476946d9";
+        var subscriptionKey = "<masukkankey>";
  
         // You must use the same Azure region in your REST API method as you used to
         // get your subscription keys. For example, if you got your subscription keys
@@ -148,7 +148,7 @@ if ($terupload) {
     echo "Upload Gagal!";
 } 
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=anonymousliem;AccountKey=cCoHpsQemjlOWzGszVkAMlbxcrUp2As9TjoQRFhheIn7LM1pzGSeYSpC2wgKR84R4OSaaEJjJrZxg2CAIBgEQg==;EndpointSuffix=core.windows.net";
+$connectionString = "<masukkanconnectionstring>";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
