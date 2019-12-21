@@ -28,7 +28,7 @@
  
         // Request parameters.
         var params = {
-            "visualFeatures": "Categories,Description,Color",
+            "visualFeatures": "Categories,Description,Tags",
             "details": "",
             "language": "en",
         };
