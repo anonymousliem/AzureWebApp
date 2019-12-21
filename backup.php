@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "anonymousliemserver.database.windows.net";
-    $user = "anonymousliem";
-    $pass = "Helvetia17";
-    $db = "anonymousliemDatabase";
+    $host = "<namahost>";
+    $user = "<namauser>";
+    $pass = "<namapassword>";
+    $db = "<namadatabase>";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
