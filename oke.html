@@ -24,12 +24,10 @@
         // If you use a free trial subscription key, you shouldn't need to change
         // this region.
         //var uriBase = "https://anonymousliemVision.cognitiveservices.azure.com/vision/v2.0/analyze";
-            var uriBase = "anonymousliemVision.cognitiveservices.azure.com"
+         var uriBase = "https://anonymousliemVision.cognitiveservices.azure.com/vision/v2.0/analyze"
         // Request parameters.
         var params = {
-            "visualFeatures": "Color",
-            "details": "Landmarks",
-            "language": "en",
+            "visualFeatures": "Color"
         };
  
         // Display the image.
@@ -55,7 +53,7 @@
  
         .done(function(data) {
             // Show formatted JSON on webpage.
-            $("#responseTextArea").val(JSON.stringify(data, null, 2));
+            $("#responseTextArea2").val(JSON.stringify(data, null, 2));
         })
  
         .fail(function(jqXHR, textStatus, errorThrown) {
@@ -81,7 +79,7 @@ Image to analyze:
     <div id="jsonOutput" style="width:600px; display:table-cell;">
         Response:
         <br><br>
-        <textarea id="responseTextArea" class="UIInput"
+        <textarea id="responseTextArea2" class="UIInput"
                   style="width:580px; height:400px;"></textarea>
     </div>
     <div id="imageDiv" style="width:420px; display:table-cell;">
